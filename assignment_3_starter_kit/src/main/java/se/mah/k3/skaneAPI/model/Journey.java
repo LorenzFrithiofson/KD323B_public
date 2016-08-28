@@ -8,6 +8,7 @@ import java.util.Calendar;
  *
  */
 public class Journey {
+	//hej
 	private Calendar depDateTime;
 	private Calendar arrDateTime;
 	private String noOfChanges;

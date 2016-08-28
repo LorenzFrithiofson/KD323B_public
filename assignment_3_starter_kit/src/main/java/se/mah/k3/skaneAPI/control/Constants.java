@@ -30,7 +30,7 @@ public class Constants {
 		String url = baseURL + queryURL + pipe+startStationNumber + pipe + midPartURL +pipe + endStationNumber + pipe + lastPartURL + date + space + time+noOfResults+nbrRes;
 		return url;
 	}
-	
+
 	/**
 	 * Build the Querystringz
 	 * @param startStationNumber from sk�netrafiken
@@ -42,7 +42,7 @@ public class Constants {
 		String url = baseURL + queryURL + pipe+startStationNumber + pipe + midPartURL +pipe + endStationNumber + pipe + "0"+ noOfResults+nbrRes;
 		return url;
 	}
-	
+
 	/**
 	 * Build the StationresultURL
 	 * @param station from sk�netrafiken
@@ -51,5 +51,5 @@ public class Constants {
 		String url = baseURL + stationResultURL +station.getStationNbr();
 		return url;
 	}
-	
+
 }

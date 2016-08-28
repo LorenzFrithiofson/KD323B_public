@@ -10,11 +10,11 @@ public class Station implements Comparable<Station>{
 	private String stationName;
 	private double latitude; //X coordinate, RT90
 	private double longitude; //Y coordinate, RT90
-	
+
 	public Station(String stationNbr) {
 		this.stationNbr=stationNbr;
 	}
-	
+
 	public Station(String stationName,String stationNbr) {
 		this.stationName = stationName;
 		this.stationNbr=stationNbr;
@@ -29,7 +29,7 @@ public class Station implements Comparable<Station>{
 			e.printStackTrace();
 		}
 	}
-	
+
 	public double getLatitude() {
 		return latitude;
 	}
@@ -52,29 +52,29 @@ public class Station implements Comparable<Station>{
 	public String toString() {
 		return stationName;
 	}
-	
-	 @Override
+
+	@Override
 	public boolean equals(Object o) {
-		 boolean b = false;
-		 Station s = (Station)o;
-		 if (this.stationNbr.equals(s.stationNbr)){
-			 b = true;
-		 }
-		 return b;
+		boolean b = false;
+		Station s = (Station)o;
+		if (this.stationNbr.equals(s.stationNbr)){
+			b = true;
+		}
+		return b;
 	}
-	 
-	 
-	 @Override
+
+
+	@Override
 	public int hashCode() {
 		// TODO Auto-generated method stub
 		return this.stationNbr.hashCode();
 	}
-	 
+
 	public int compareTo(Station another) {
 		int res = 0;
 		if(this.stationName != null && another.stationName != null){
-			   res = this.stationName.compareToIgnoreCase(another.stationName);
-	    }
+			res = this.stationName.compareToIgnoreCase(another.stationName);
+		}
 		return res;
 	}
 }

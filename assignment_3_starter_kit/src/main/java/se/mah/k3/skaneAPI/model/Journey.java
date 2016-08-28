@@ -8,7 +8,6 @@ import java.util.Calendar;
  *
  */
 public class Journey {
-	//hej
 	private Calendar depDateTime;
 	private Calendar arrDateTime;
 	private String noOfChanges;
@@ -21,7 +20,7 @@ public class Journey {
 	private String arrTimeDeviation;
 	private Station startStation;
 	private Station endStation;
-	
+
 	public Journey(Station startStation, Station endStation) {
 		this.startStation = startStation;
 		this.endStation = endStation;
@@ -44,28 +43,28 @@ public class Journey {
 	public void setNoOfChanges(String number) {
 		this.noOfChanges = number;
 	}
-	
+
 	public Station getStartStation(){
 		return this.startStation;
 	}
-	
+
 	public Station getEndStation(){
 		return this.endStation;
 	}
-	
+
 	public String getLineOnFirstJourney() {
 		return lineOnFirstJourney;
 	}
-	
+
 	public void setLineOnFirstJourney(String lineOnFirstJourney) {
 		this.lineOnFirstJourney = lineOnFirstJourney;
 	}
-	
+
 	public void setTravelTime(String travelMinutes) {
 		this.travelMinutes = travelMinutes;
-		
+
 	}
-	
+
 	public String getTravelMinutes(){
 		return this.travelMinutes;
 	}
@@ -106,5 +105,5 @@ public class Journey {
 		this.endStation = endStation;
 	}
 
-	
+
 }
